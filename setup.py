@@ -16,7 +16,7 @@ py_modules = ["load", "save"]
 setup(
     name='modular-json',
     version=version,
-    description='A modular approach to parsing JSON.',
+    description='A modular approach to handling JSON.',
     license='MIT',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -47,6 +47,5 @@ setup(
       'modular-json': py_modules
       },
     python_requires=python_version,
-    
     keywords='python, json, modular, parsing, interpreting, exporting, importing'
 )

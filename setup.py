@@ -10,11 +10,11 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 # modular-json package data
-py_modules = ["load", "save"]
+py_modules = ["encoding", "loading", "saving"]
 
 # Run setup function
 setup(
-    name='modular-json',
+    name='openjson',
     version=version,
     description='A modular approach to handling JSON.',
     license='MIT',
@@ -22,8 +22,8 @@ setup(
     long_description_content_type='text/markdown',
     author='Jordan Welsman',
     author_email='jordan.welsman@outlook.com',
-    url='https://pypi.org/project/modular-json/',
-    download_url='https://github.com/JordanWelsman/modular-json/tags',
+    url='https://pypi.org/project/openjson/',
+    download_url='https://github.com/JordanWelsman/openjson/tags',
     classifiers=[
         'Development Status :: 1 - Planning',
         'Intended Audience :: Developers',
@@ -44,8 +44,11 @@ setup(
         "Programming Language :: Python :: 3.12"
     ],
     package_data = {
-      'modular-json': py_modules
+      'openjson': py_modules
       },
     python_requires=python_version,
+    install_requires = [
+        "jutl"
+    ],
     keywords='python, json, modular, parsing, interpreting, exporting, importing'
 )

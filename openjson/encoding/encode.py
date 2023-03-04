@@ -1,6 +1,7 @@
 # External class visibility
 __all__ = ['_encode_object', '_encode_array', '_encode_number_int', '_encode_number_real', '_encode_string', '_encode_boolean', '_encode_null', '_encode']
 
+
 def _encode_object(key: str, value: dict):
     string = f"\"{key}\": " + "{"
     for index, item in enumerate(value):
